@@ -1,0 +1,67 @@
+[
+  {
+    "description": "7-4在moco中配置post请求",
+    "request": {
+      "uri": "/demo1/post1",
+      "method": "post"
+    },
+    "response": {
+      "text": "不带参数的post请求例子"
+    }
+  },
+  {
+    "request": {
+      "uri": "/demo1/post2",
+      "method": "post",
+      "forms": {
+        "name": "姓名1",
+        "age": "11"
+      }
+    },
+    "response": {
+      "text": "带参数的post请求例子"
+    }
+  },
+  {
+    "description": "7-7带cookies信息的post请求",
+    "request": {
+      "uri": "/demo1/post3",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "姓名2",
+        "age": "12"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "msg": "success",
+        "code": "1"
+      }
+    }
+  },
+  {
+    "description": "7-8带有headers信息的mock请求",
+    "request": {
+      "uri": "/demo1/post4",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "姓名3",
+        "age": "13"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "msg": "success",
+        "code": "1"
+      }
+    }
+  }
+]

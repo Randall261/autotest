@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    <test name="allgroups">
+        <classes>
+            <class name="com.course.testng.groups.ClassGroups1"/>
+            <class name="com.course.testng.groups.ClassGroups2"/>
+        </classes>
+    </test>
+    <!-- 指定运行某个测试分组，这里运行的是@Test(groups = "student")-->
+    <test name="studentgroup">
+        <groups>
+            <run>
+                <include name="student"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.groups.ClassGroups1"/>
+            <class name="com.course.testng.groups.ClassGroups2"/>
+        </classes>
+    </test>
+</suite>

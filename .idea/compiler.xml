@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mooc6" />
+        <module name="mooc10" />
+        <module name="mooc11" />
+        <module name="mooc9" />
+        <module name="mooc12" />
+        <module name="mooc13" />
+        <module name="mooc5" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mooc7" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mooc10" options="" />
+      <module name="mooc5" options="" />
+      <module name="mooc6" options="" />
+      <module name="mooc9" options="" />
+    </option>
+  </component>
+</project>

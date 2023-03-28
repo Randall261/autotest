@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="test">
+    <test name="tb">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"/>
+            <class name="com.course.testng.suite.TaoBaoTest"/>
+        </classes>
+    </test>
+    <test name="zfb">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"/>
+            <class name="com.course.testng.suite.AliTest"/>
+        </classes>
+    </test>
+</suite>

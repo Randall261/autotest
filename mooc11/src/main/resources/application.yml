@@ -1,0 +1,21 @@
+server:
+  port: 8889
+
+logging:
+  path: logs
+  file: mooc.log
+
+spring:
+  application:
+    name: report
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mooc?useSSL=false
+    username: root
+    password: a123456.
+
+mybatis:
+  type-aliases-package: com.course.mybatis.model
+  mapper-locations:
+     - mapper/*

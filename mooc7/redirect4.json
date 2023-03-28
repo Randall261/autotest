@@ -1,0 +1,28 @@
+[
+  {
+    "description": "7-9实现请求重定向",
+    "request": {
+      "uri": "/demo1/redirect1",
+      "method": "get"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "request": {
+      "uri": "/demo1/redirect2"
+    },
+    "redirectTo": "/demo1/redirect3"
+  },
+  {
+    "request": {
+      "uri": "/demo1/redirect3"
+    },
+    "response": {
+      "json": {
+        "code": 1,
+        "data": "重定向到了/demo1/redirect3",
+        "msg": "success"
+      }
+    }
+  }
+]

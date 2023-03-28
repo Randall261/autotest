@@ -1,0 +1,69 @@
+[
+  {
+    "description": "7-3带参数的get方法实现",
+    "request": {
+      "uri": "/demo1/get1",
+      "method": "get"
+    },
+    "response": {
+      "text": "不带参数的get请求例子"
+    }
+  },
+  {
+    "request": {
+      "uri": "/demo1/get2",
+      "method": "get",
+      "queries": {
+        "name": "姓名1",
+        "age": "10"
+      }
+    },
+    "response": {
+      "text": "带参数的get请求例子"
+    }
+  },{
+  "description": "7-6带cookies信息的get请求",
+  "request": {
+    "uri": "/demo1/get3",
+    "method": "get",
+    "cookies": {
+      "login": "true"
+    }
+  },
+  "response": {
+    "text": "带cookies信息的get请求例子"
+  }
+},{
+  "description": "9-2 Mock一个返回Cookies信息的请求",
+  "request": {
+    "uri": "/demo1/get4",
+    "method": "get"
+  },
+  "response": {
+    "cookies": {
+      "login": "true"
+    },
+    "text": "返回cookies信息\"login\": \"true\""
+  }
+},{
+  "description": "7-7带cookies信息的post请求",
+  "request": {
+    "uri": "/demo1/post3",
+    "method": "post",
+    "cookies": {
+      "login": "true"
+    },
+    "json": {
+      "name": "姓名2",
+      "age": "12"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "msg": "success",
+      "code": "1"
+    }
+  }
+}
+]
